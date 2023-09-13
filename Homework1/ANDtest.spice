@@ -1,0 +1,21 @@
+* NGSPICE file created from ANDtest.ext - technology: sky130A
+
+.subckt inverter A Y VP VN
+X0 Y A VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.55 ps=3.1 w=1 l=0.15
+X1 Y A VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.55 ps=3.1 w=1 l=0.15
+.ends
+
+.subckt AND_test A B Y VP VN
+X0 Y B a_10_60# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X1 a_10_60# A VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X2 Y A VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X3 Y B VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+.ends
+
+
+* Top level circuit ANDtest
+
+Xinverter_0 inverter_0/A Y VP VN inverter
+XAND_test_0 A B inverter_0/A VP VN AND_test
+.end
+
