@@ -1,0 +1,20 @@
+magic
+tech sky130A
+timestamp 1695948778
+use Latch  Latch_0 ~/Documents/MADVLSI/Homework2
+timestamp 1695933658
+transform 1 0 1055 0 1 405
+box -575 -410 180 615
+use Latch  Latch_1
+timestamp 1695933658
+transform 1 0 1810 0 1 405
+box -575 -410 180 615
+use Latch  Latch_2
+timestamp 1695933658
+transform 1 0 2565 0 1 405
+box -575 -410 180 615
+use Latch  Latch_3
+timestamp 1695933658
+transform 1 0 3320 0 1 405
+box -575 -410 180 615
+<< end >>

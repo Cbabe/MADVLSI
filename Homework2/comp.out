@@ -1,0 +1,28 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell Dlatch_complement in circuit Shift_Register.spice (0)(1 instance)
+Flattening unmatched subcell Latch in circuit Shift_Register.spice (0)(3 instances)
+Flattening unmatched subcell Dlatch_xschem in circuit Shift_register_xschem.spice (1)(4 instances)
+
+Subcircuit summary:
+Circuit 1: Shift_Register.spice            |Circuit 2: Shift_register_xschem.spice     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (28)               |sky130_fd_pr__pfet_01v8 (32->28)           
+sky130_fd_pr__nfet_01v8 (28)               |sky130_fd_pr__nfet_01v8 (32->28)           
+Number of devices: 56                      |Number of devices: 56                      
+Number of nets: 29                         |Number of nets: 29                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match with 33 symmetries.
+Cells have no pins;  pin matching not needed.
+Device classes Shift_Register.spice and Shift_register_xschem.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

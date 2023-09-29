@@ -1,0 +1,49 @@
+* NGSPICE file created from Shift_Register.ext - technology: sky130A
+
+.subckt Dlatch_complement GND D_bar D VDD Phi Q Q_bar
+X0 VDD a_n910_50# a_n910_310# VDD sky130_fd_pr__pfet_01v8 ad=0.275 pd=1.55 as=0.5 ps=3 w=1 l=0.15
+X1 Q_bar Q a_80_370# VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.275 ps=1.55 w=1 l=0.15
+X2 a_n910_50# a_n910_310# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.275 ps=1.55 w=1 l=0.15
+X3 Q_bar Phi a_n910_50# GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.45 ps=2.9 w=1 l=0.15
+X4 a_n600_n770# a_n910_50# a_n910_310# GND sky130_fd_pr__nfet_01v8 ad=0.275 pd=1.55 as=0.5 ps=3 w=1 l=0.15
+X5 a_n910_50# Phi D_bar VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.45 ps=2.9 w=1 l=0.15
+X6 a_n600_n770# Phi GND GND sky130_fd_pr__nfet_01v8 ad=1.1 pd=5.1 as=1 ps=5 w=2 l=0.15
+X7 a_80_370# Phi VDD VDD sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=0.9 ps=4.9 w=2 l=0.15
+X8 Q Phi a_n910_310# GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.45 ps=2.9 w=1 l=0.15
+X9 a_n910_310# Phi D VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.45 ps=2.9 w=1 l=0.15
+X10 a_80_370# Q_bar Q VDD sky130_fd_pr__pfet_01v8 ad=0.275 pd=1.55 as=0.5 ps=3 w=1 l=0.15
+X11 Q_bar Q GND GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.275 ps=1.55 w=1 l=0.15
+X12 GND Q_bar Q GND sky130_fd_pr__nfet_01v8 ad=0.275 pd=1.55 as=0.5 ps=3 w=1 l=0.15
+X13 a_n910_50# a_n910_310# a_n600_n770# GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.275 ps=1.55 w=1 l=0.15
+.ends
+
+.subckt Latch GND D_bar D VDD Phi Q Q_bar
+X0 VDD a_n910_50# a_n910_310# VDD sky130_fd_pr__pfet_01v8 ad=0.275 pd=1.55 as=0.5 ps=3 w=1 l=0.15
+X1 Q_bar Q a_80_370# VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.275 ps=1.55 w=1 l=0.15
+X2 a_n910_50# a_n910_310# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.275 ps=1.55 w=1 l=0.15
+X3 Q_bar Phi a_n910_50# GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.45 ps=2.9 w=1 l=0.15
+X4 a_n600_n770# a_n910_50# a_n910_310# GND sky130_fd_pr__nfet_01v8 ad=0.275 pd=1.55 as=0.5 ps=3 w=1 l=0.15
+X5 a_n910_50# Phi D_bar VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.45 ps=2.9 w=1 l=0.15
+X6 a_n600_n770# Phi GND GND sky130_fd_pr__nfet_01v8 ad=1.1 pd=5.1 as=1 ps=5 w=2 l=0.15
+X7 a_80_370# Phi VDD VDD sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=0.9 ps=4.9 w=2 l=0.15
+X8 Q Phi a_n910_310# GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.45 ps=2.9 w=1 l=0.15
+X9 a_n910_310# Phi D VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.45 ps=2.9 w=1 l=0.15
+X10 a_80_370# Q_bar Q VDD sky130_fd_pr__pfet_01v8 ad=0.275 pd=1.55 as=0.5 ps=3 w=1 l=0.15
+X11 Q_bar Q GND GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.275 ps=1.55 w=1 l=0.15
+X12 GND Q_bar Q GND sky130_fd_pr__nfet_01v8 ad=0.275 pd=1.55 as=0.5 ps=3 w=1 l=0.15
+X13 a_n910_50# a_n910_310# a_n600_n770# GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.275 ps=1.55 w=1 l=0.15
+.ends
+
+
+* Top level circuit Shift_Register
+
+XDlatch_complement_0 VSUBS Dlatch_complement_0/D_bar Dlatch_complement_0/D Latch_2/VDD
++ Latch_2/Phi Latch_0/D Latch_0/D_bar Dlatch_complement
+XLatch_0 VSUBS Latch_0/D_bar Latch_0/D Latch_2/VDD Latch_2/Phi Latch_1/D Latch_1/D_bar
++ Latch
+XLatch_1 VSUBS Latch_1/D_bar Latch_1/D Latch_2/VDD Latch_2/Phi Latch_2/D Latch_2/D_bar
++ Latch
+XLatch_2 VSUBS Latch_2/D_bar Latch_2/D Latch_2/VDD Latch_2/Phi Latch_2/Q Latch_2/Q_bar
++ Latch
+.end
+

@@ -1,0 +1,214 @@
+timestamp 1695933888
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use Latch Latch_2 1 0 5680 0 1 820
+use Latch Latch_1 1 0 4170 0 1 820
+use Latch Latch_0 1 0 2660 0 1 820
+use Dlatch_complement Dlatch_complement_0 1 0 1150 0 1 820
+node "w_1500_1150#" 950 0.3 1500 1150 nw 0 0 0 0 100 40 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1510_1420#" 7283 20.7 1510 1420 nw 0 0 0 0 6900 520 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "Latch_0/GND" "Latch_0/a_n910_50#" 0.0381526
+cap "Latch_0/D_bar" "Latch_0/GND" -2.84217e-14
+cap "Latch_0/D_bar" "Dlatch_complement_0/a_n910_50#" 0.387038
+cap "Latch_0/VDD" "Latch_0/Phi" 0.0921615
+cap "Dlatch_complement_0/a_80_370#" "Latch_0/a_n910_310#" 0.399904
+cap "Latch_0/D_bar" "Latch_0/VDD" 0.0867214
+cap "Latch_0/GND" "Dlatch_complement_0/a_n600_n770#" 3.4761
+cap "Latch_0/VDD" "Dlatch_complement_0/a_80_370#" 1.35284
+cap "Dlatch_complement_0/a_n600_n770#" "Latch_0/a_n600_n770#" 0.0898879
+cap "Latch_0/VDD" "Dlatch_complement_0/a_n910_310#" 1.7053e-13
+cap "Latch_0/D" "Latch_0/a_n910_310#" 0.340771
+cap "Latch_0/D_bar" "Latch_0/Phi" 0.108108
+cap "Latch_0/GND" "Latch_0/a_n600_n770#" 2.08983
+cap "Latch_0/GND" "Latch_0/a_n910_310#" 0.0531604
+cap "Latch_0/Phi" "Dlatch_complement_0/a_80_370#" 0.0573738
+cap "Latch_0/VDD" "Latch_0/D" 6.43883
+cap "Latch_0/Phi" "Dlatch_complement_0/a_n600_n770#" 0.117506
+cap "Latch_0/Phi" "Latch_0/D" 3.42857
+cap "Latch_0/VDD" "Dlatch_complement_0/a_n910_50#" 0.10459
+cap "Latch_0/D" "Latch_0/a_n910_50#" 0.363636
+cap "Latch_0/GND" "Latch_0/Phi" 1.48348
+cap "Latch_0/D_bar" "Latch_1/Phi" 8.57908
+cap "Dlatch_complement_0/a_n910_50#" "Latch_0/D_bar" 0.432452
+cap "Latch_0/a_n600_n770#" "Latch_1/Phi" 0.117506
+cap "Latch_0/D" "Latch_0/a_n910_310#" 0.235366
+cap "Dlatch_complement_0/a_n910_310#" "Latch_0/D_bar" 0.0362349
+cap "Latch_1/D_bar" "Latch_1/Phi" 0.108108
+cap "Latch_1/VDD" "Latch_0/a_n910_50#" 0.308066
+cap "Latch_1/VDD" "Latch_0/D" 2.68973
+cap "Dlatch_complement_0/a_n910_50#" "Latch_1/Phi" 0.16848
+cap "Latch_0/a_n600_n770#" "Latch_1/GND" 5.83832
+cap "Latch_0/D_bar" "Latch_0/a_n910_310#" 27.3096
+cap "Latch_1/Phi" "Latch_1/GND" 17.35
+cap "Latch_1/VDD" "Latch_0/D_bar" 76.652
+cap "Latch_0/a_n600_n770#" "Latch_1/a_n600_n770#" 0.0898879
+cap "Latch_0/a_n910_50#" "Latch_0/D" 0.363636
+cap "Dlatch_complement_0/a_n910_310#" "Latch_1/Phi" 0.115329
+cap "Latch_0/a_n600_n770#" "Dlatch_complement_0/a_n600_n770#" 0.0886698
+cap "Latch_0/a_n910_50#" "Latch_0/D_bar" 2.41551
+cap "Dlatch_complement_0/a_n600_n770#" "Latch_1/Phi" 0.372052
+cap "Latch_0/D" "Latch_0/D_bar" 55.5051
+cap "Latch_1/Phi" "Dlatch_complement_0/a_80_370#" 0.185277
+cap "Latch_1/VDD" "Latch_1/D_bar" 0.0867214
+cap "Latch_1/VDD" "Latch_1/Phi" 4.18195
+cap "Dlatch_complement_0/a_n600_n770#" "Latch_1/GND" 2.68373
+cap "Latch_0/a_n600_n770#" "Latch_0/D" 0.0371551
+cap "Latch_1/VDD" "Latch_1/GND" 0.00845169
+cap "Latch_0/a_n910_50#" "Latch_1/D_bar" 0.387038
+cap "Latch_0/D" "Latch_1/Phi" 3.96435
+cap "Latch_0/a_n600_n770#" "Latch_0/D_bar" 0.0517049
+cap "Dlatch_complement_0/a_80_370#" "Latch_0/a_n910_310#" 0.381837
+cap "Latch_1/VDD" "Latch_0/a_n910_310#" 0.510166
+cap "Latch_1/a_n910_310#" "Latch_1/D_bar" 27.3096
+cap "Latch_1/a_n910_50#" "Latch_1/D" 0.727273
+cap "Latch_0/a_n910_50#" "Latch_1/D_bar" 0.432452
+cap "Latch_2/Phi" "Latch_2/GND" 18.1773
+cap "Latch_1/a_n600_n770#" "Latch_2/a_n600_n770#" 0.0898879
+cap "Latch_2/VDD" "Latch_1/D" 9.24361
+cap "Latch_1/a_n910_50#" "Latch_2/GND" 0.0381526
+cap "Latch_2/Phi" "Latch_0/a_80_370#" 0.24265
+cap "Latch_1/a_n600_n770#" "Latch_1/D_bar" 0.0517049
+cap "Latch_1/D_bar" "Latch_1/D" 55.5051
+cap "Latch_2/VDD" "Latch_2/GND" 7.10543e-15
+cap "Latch_2/Phi" "Latch_0/a_n910_310#" 0.115329
+cap "Latch_1/a_n600_n770#" "Latch_0/a_n600_n770#" 0.0886698
+cap "Latch_1/a_n910_310#" "Latch_1/D" 0.576137
+cap "Latch_2/VDD" "Latch_2/Phi" 4.18195
+cap "Latch_1/D_bar" "Latch_2/GND" 1.42109e-14
+cap "Latch_2/VDD" "Latch_0/a_80_370#" 1.35284
+cap "Latch_0/a_n600_n770#" "Latch_2/GND" 2.68373
+cap "Latch_2/Phi" "Latch_1/D_bar" 8.57908
+cap "Latch_2/VDD" "Latch_1/a_n910_50#" 0.308066
+cap "Latch_1/a_n910_310#" "Latch_2/GND" 0.0531604
+cap "Latch_1/a_n600_n770#" "Latch_1/D" 0.0371551
+cap "Latch_2/Phi" "Latch_0/a_n600_n770#" 0.372052
+cap "Latch_2/Phi" "Latch_2/D_bar" 0.108108
+cap "Latch_1/a_n910_50#" "Latch_1/D_bar" 2.41551
+cap "Latch_0/a_n910_310#" "Latch_1/D_bar" 0.0362349
+cap "Latch_1/a_n910_310#" "Latch_0/a_80_370#" 0.781741
+cap "Latch_0/a_n910_50#" "Latch_2/Phi" 0.16848
+cap "Latch_1/a_n910_50#" "Latch_2/D_bar" 0.387038
+cap "Latch_2/VDD" "Latch_1/D_bar" 76.4181
+cap "Latch_1/a_n600_n770#" "Latch_2/GND" 7.92815
+cap "Latch_1/D" "Latch_2/GND" -3.77476e-15
+cap "Latch_2/VDD" "Latch_2/D_bar" 0.0867214
+cap "Latch_1/a_n910_310#" "Latch_2/VDD" 0.510166
+cap "Latch_1/a_n600_n770#" "Latch_2/Phi" 0.117506
+cap "Latch_2/Phi" "Latch_1/D" 7.39292
+cap "Latch_1/a_n910_310#" "Latch_2/D_bar" 0.0362349
+cap "Latch_2/VDD" "Latch_2/a_n910_310#" 0.510166
+cap "Latch_2/VDD" "Latch_2/D_bar" 76.4181
+cap "Latch_2/D_bar" "Latch_1/a_n910_50#" 0.432452
+cap "Latch_2/Phi" "Latch_1/a_80_370#" 0.24265
+cap "Latch_1/a_n600_n770#" "Latch_2/a_n600_n770#" 0.0886698
+cap "Latch_2/Phi" "Latch_2/D" 7.39292
+cap "Latch_2/VDD" "Latch_1/a_80_370#" 1.35284
+cap "Latch_2/a_n600_n770#" "Latch_2/D_bar" 0.0517049
+cap "Latch_2/VDD" "Latch_2/D" 9.24361
+cap "Latch_2/a_n600_n770#" "Latch_2/GND" 4.45204
+cap "Latch_2/a_n910_50#" "Latch_2/VDD" 0.203476
+cap "Latch_1/a_n600_n770#" "Latch_2/GND" 2.68373
+cap "Latch_2/a_n910_310#" "Latch_2/D_bar" 27.3096
+cap "Latch_2/a_n600_n770#" "Latch_2/D" 0.0371551
+cap "Latch_2/GND" "Latch_2/a_n910_310#" 0.0531604
+cap "Latch_2/GND" "Latch_2/D_bar" 1.42109e-14
+cap "Latch_2/Phi" "Latch_1/a_n910_310#" 0.115329
+cap "Latch_2/Phi" "Latch_2/VDD" 4.08979
+cap "Latch_2/Phi" "Latch_1/a_n910_50#" 0.16848
+cap "Latch_1/a_80_370#" "Latch_2/a_n910_310#" 0.781741
+cap "Latch_2/D" "Latch_2/a_n910_310#" 0.576137
+cap "Latch_2/D" "Latch_2/D_bar" 55.5051
+cap "Latch_2/GND" "Latch_2/D" 6.88338e-15
+cap "Latch_2/a_n910_50#" "Latch_2/D_bar" 2.41551
+cap "Latch_1/a_n600_n770#" "Latch_2/Phi" 0.372052
+cap "Latch_2/a_n910_50#" "Latch_2/GND" 0.0381526
+cap "Latch_2/Phi" "Latch_2/D_bar" 8.57908
+cap "Latch_2/Phi" "Latch_2/GND" 17.521
+cap "Latch_2/a_n910_50#" "Latch_2/D" 0.727273
+cap "Latch_0/Phi" "Dlatch_complement_0/a_80_370#" 0.143435
+cap "Latch_0/VDD" "Dlatch_complement_0/a_80_370#" 3.47411
+cap "Latch_0/D" "Latch_0/Phi" 0.520486
+cap "Latch_0/D" "Latch_0/VDD" 1.15905
+cap "Latch_0/Phi" "Latch_0/VDD" 1.48941
+cap "Latch_0/D_bar" "Latch_0/Phi" 0.597904
+cap "Latch_0/D_bar" "Latch_0/VDD" 0.710572
+cap "Latch_0/a_n910_310#" "Dlatch_complement_0/a_80_370#" 0.926599
+cap "Latch_0/a_n910_310#" "Latch_0/D" 0.672063
+cap "Latch_0/a_n910_310#" "Latch_0/VDD" 0.00367945
+cap "Latch_1/a_n910_310#" "Latch_1/D" 0.672063
+cap "Latch_0/D_bar" "Latch_1/Phi" 0.828821
+cap "Latch_0/a_n910_310#" "Latch_0/D" 0.708677
+cap "Latch_1/VDD" "Latch_0/D" 0.00729147
+cap "Latch_0/a_n910_310#" "Latch_1/Phi" 0.0390622
+cap "Latch_1/VDD" "Latch_1/Phi" 38.7457
+cap "Latch_0/a_n910_310#" "Dlatch_complement_0/a_80_370#" 18.5752
+cap "Dlatch_complement_0/a_n910_50#" "Latch_1/VDD" 0.00384919
+cap "Latch_1/D_bar" "Latch_1/VDD" 0.710572
+cap "Latch_1/D" "Latch_1/Phi" 0.063343
+cap "Dlatch_complement_0/a_80_370#" "Latch_1/VDD" 26.3758
+cap "Latch_0/D" "Latch_1/Phi" 0.958297
+cap "Latch_0/a_n910_50#" "Latch_1/VDD" -5.68434e-14
+cap "Dlatch_complement_0/a_n910_50#" "Latch_1/Phi" 0.175118
+cap "Latch_1/GND" "Latch_1/VDD" 3.55271e-15
+cap "Latch_1/D_bar" "Latch_1/Phi" 0.597904
+cap "Latch_1/VDD" "Latch_0/D_bar" 0.0103409
+cap "Dlatch_complement_0/a_80_370#" "Latch_1/Phi" 4.31834
+cap "Latch_0/a_n910_310#" "Latch_1/VDD" 6.88442
+cap "Latch_1/a_n910_310#" "Latch_1/VDD" 0.00367945
+cap "Dlatch_complement_0/a_n910_310#" "Latch_1/Phi" 0.2382
+cap "Latch_2/a_n910_310#" "Latch_2/D" 0.672063
+cap "Latch_2/D_bar" "Latch_2/Phi" 0.108108
+cap "Latch_1/D" "Latch_2/Phi" 1.41544
+cap "Latch_1/D_bar" "Latch_2/Phi" 0.828821
+cap "Latch_1/a_n910_310#" "Latch_2/Phi" 0.0390622
+cap "Latch_0/a_80_370#" "Latch_2/Phi" 4.84557
+cap "Latch_0/a_n910_310#" "Latch_2/Phi" 0.2382
+cap "Latch_1/a_n910_310#" "Latch_1/D" 0.708677
+cap "Latch_2/VDD" "Latch_0/a_n910_50#" 0.00384919
+cap "Latch_2/VDD" "Latch_2/Phi" 39.3369
+cap "Latch_1/a_n910_310#" "Latch_0/a_80_370#" 21.3891
+cap "Latch_2/VDD" "Latch_2/GND" -3.55271e-15
+cap "Latch_2/a_n910_310#" "Latch_2/VDD" 0.00367945
+cap "Latch_1/D" "Latch_2/VDD" 1.16634
+cap "Latch_1/D_bar" "Latch_2/VDD" 0.0103409
+cap "Latch_1/a_n910_310#" "Latch_2/VDD" 6.88442
+cap "Latch_2/D" "Latch_2/Phi" 0.063343
+cap "Latch_0/a_n910_50#" "Latch_2/Phi" 0.175118
+cap "Latch_0/a_80_370#" "Latch_2/VDD" 34.4666
+cap "Latch_2/Phi" "Latch_2/D_bar" 1.31862
+cap "Latch_2/Phi" "Latch_1/a_n910_50#" 0.175118
+cap "Latch_2/Phi" "Latch_2/D" 1.41544
+cap "Latch_2/VDD" "Latch_2/D_bar" 0.720913
+cap "Latch_2/VDD" "Latch_1/a_n910_50#" 0.00384919
+cap "Latch_2/D" "Latch_2/a_n910_310#" 0.708677
+cap "Latch_2/GND" "Latch_2/VDD" 3.55271e-15
+cap "Latch_2/D" "Latch_2/VDD" 1.16634
+cap "Latch_2/Phi" "Latch_1/a_n910_310#" 0.2382
+cap "Latch_2/Phi" "Latch_2/a_n910_310#" 0.0390622
+cap "Latch_2/Phi" "Latch_2/VDD" 38.4409
+cap "Latch_2/a_n910_310#" "Latch_2/VDD" 6.88442
+cap "Latch_1/a_80_370#" "Latch_2/Phi" 4.84557
+cap "Latch_1/a_80_370#" "Latch_2/a_n910_310#" 21.3891
+cap "Latch_1/a_80_370#" "Latch_2/VDD" 34.4666
+merge "Latch_2/GND" "Latch_1/GND" -666.987 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2820 0 0 0 0 0 0 0 0 0 0
+merge "Latch_1/GND" "Dlatch_complement_0/GND"
+merge "Dlatch_complement_0/GND" "Latch_0/GND"
+merge "Latch_0/GND" "VSUBS"
+merge "Dlatch_complement_0/Phi" "Latch_2/Phi" -300.86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "Latch_2/Phi" "Latch_1/Phi"
+merge "Latch_1/Phi" "Latch_0/Phi"
+merge "Latch_1/Q_bar" "Latch_2/D_bar" -186.389 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "Dlatch_complement_0/VDD" "Latch_2/VDD" -604.807 0 0 0 0 -6900 -2360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2760 0 0 0 0 0 0 0 0 0 0
+merge "Latch_2/VDD" "Latch_1/VDD"
+merge "Latch_1/VDD" "Latch_0/VDD"
+merge "Latch_0/VDD" "w_1500_1150#"
+merge "w_1500_1150#" "w_1510_1420#"
+merge "Latch_0/Q_bar" "Latch_1/D_bar" -186.389 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "Dlatch_complement_0/Q_bar" "Latch_0/D_bar" -186.623 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "Latch_0/Q" "Latch_1/D" -84.9584 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "Dlatch_complement_0/Q" "Latch_0/D" -83.4646 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "Latch_1/Q" "Latch_2/D" -84.9584 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0

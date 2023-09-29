@@ -1,0 +1,19 @@
+* NGSPICE file created from Latch_improved.ext - technology: sky130A
+
+.subckt Latch_improved GND D_bar D VDD Phi Q Q_bar
+X0 VDD Phi a_n560_1320# VDD sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.9 as=1 ps=5 w=2 l=0.15
+X1 VDD a_n910_50# a_n910_310# VDD sky130_fd_pr__pfet_01v8 ad=0.275 pd=1.55 as=0.5 ps=3 w=1 l=0.15
+X2 a_n560_1320# Q Q_bar VDD sky130_fd_pr__pfet_01v8 ad=0.275 pd=1.55 as=0.5 ps=3 w=1 l=0.15
+X3 a_n910_50# a_n910_310# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.275 ps=1.55 w=1 l=0.15
+X4 Q_bar Phi a_n910_50# GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.45 ps=2.9 w=1 l=0.15
+X5 a_n600_n770# a_n910_50# a_n910_310# GND sky130_fd_pr__nfet_01v8 ad=0.275 pd=1.55 as=0.5 ps=3 w=1 l=0.15
+X6 a_n910_50# Phi D_bar VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.45 ps=2.9 w=1 l=0.15
+X7 a_n600_n770# Phi GND GND sky130_fd_pr__nfet_01v8 ad=1.1 pd=5.1 as=1 ps=5 w=2 l=0.15
+X8 Q Q_bar a_n560_1320# VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.275 ps=1.55 w=1 l=0.15
+X9 GND Q Q_bar GND sky130_fd_pr__nfet_01v8 ad=0.275 pd=1.55 as=0.5 ps=3 w=1 l=0.15
+X10 Q Phi a_n910_310# GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.45 ps=2.9 w=1 l=0.15
+X11 a_n910_310# Phi D VDD sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.45 ps=2.9 w=1 l=0.15
+X12 a_n910_50# a_n910_310# a_n600_n770# GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.275 ps=1.55 w=1 l=0.15
+X13 Q Q_bar GND GND sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.275 ps=1.55 w=1 l=0.15
+.ends
+
